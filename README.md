@@ -1,4 +1,4 @@
-negative-integer
+Negative Integer
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-negative-integer' );
+var isNegativeInteger = require( 'validate.io-negative-integer' );
 ```
 
-#### foo( value )
+#### isNegativeInteger( value )
 
-What does this function do?
+Validates if a `value` is a negative `integer`.
+
+``` javascript
+var value = -5;
+
+var bool = isNegativeInteger( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-negative-integer' );
+var isNegativeInteger = require( 'validate.io-negative-integer' );
+
+console.log( isNegativeInteger( -5 ) );
+// returns true
+
+console.log( isNegativeInteger( 0 ) );
+// returns false
+
+console.log( isNegativeInteger( -Math.PI ) );
+// returns false
+
+console.log( isNegativeInteger( 5 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
