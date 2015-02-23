@@ -52,6 +52,4 @@ describe( 'validate.io-negative-integer', function tests() {
 			return isNegativeInteger( value );
 		}
 	});
-
-
 });
